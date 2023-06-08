@@ -1,0 +1,25 @@
+.MainDashBord {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #FE7C0F;
+    margin-left: 243px;
+    
+}
+
+/* Flag Start  */
+.WhiteBackground {
+    background-color: white;
+}
+
+.BlackBackground {
+    background-color: black;
+}
+
+/* Flag End  */
+
+
+.heading-Boder{
+     border-bottom: 2px solid #FFFFFF;
+}

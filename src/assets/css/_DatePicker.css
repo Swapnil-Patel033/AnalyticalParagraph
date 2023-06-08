@@ -1,0 +1,56 @@
+.calendarWrap{
+    position: relative;
+    z-index: 11111;
+    border-radius: 20px;
+}
+
+.calendarWrap .calendarElement{
+    position: relative;
+    top: 232px;
+    
+}
+
+.calendarWrap  .inputBox{
+    height: 34px;
+    color: white;
+    background: black;
+    border-radius: 16px;
+    padding: 9px;
+}
+
+.rdrDayPassive .rdrDayNumber span{
+    display: none !important;
+
+}
+
+
+/* Date Picker Start  */
+.datepicker-input {
+    background: white;
+    color: black;
+    border-radius: 10px;
+    width: 158px;
+    padding: 10px;
+    height: 32px;
+    width: 191px;
+}
+/* Date Picker End  */
+
+/* Flag Start  */
+.BgwClB{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.BgbClw{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+/* Flag End  */
+
+
+.daterangepicker.show-calendar .drp-buttons{
+    display: none;
+}
+.daterangepicker td.off, .daterangepicker td.off.in-range, .daterangepicker td.off.start-date, .daterangepicker td.off.end-date{
+    display: none;
+}
