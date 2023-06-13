@@ -11,13 +11,12 @@ function App() {
   const [selectedCategory, setSelectedCategory] = useState('all');
 
   const handleCategorySelect = (category) => {
-    console.log(selectedCategory)
     setSelectedCategory(category);
   };
 
   return (
 
-    <div className={`${flag ? 'WhiteBackground' : 'BlackBackground'}`}>
+    <div >
 
       <Header
         flag={flag}

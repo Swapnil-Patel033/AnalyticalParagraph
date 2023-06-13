@@ -116,6 +116,9 @@ body.dark h1, body.dark .support a {color: #fff;}
   background-color: white;
 }
 
+.BlackBackgroundHeader{
+  background-color: rgb(65 ,68 ,72);
+}
 .BlackBackground{
   background-color: black;
 }

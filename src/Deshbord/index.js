@@ -9,9 +9,10 @@ import Sagar from '../component/Cmpt/Sagar';
 import Neel from '../component/Cmpt/Neel';
 import Nirav from '../component/Cmpt/Nirav';
 import '../assets/css/_DeshBord.css'
+import { useEffect } from 'react';
+import { authenticationApi } from '../axios/analytics/analytics';
 
-function Deshbord({ selectedCategory,flag}) {
-  console.log(flag)
+function Deshbord({ selectedCategory, flag }) {
   const componentMap = [
     {
       key: 'Swapnil Patel',
@@ -51,6 +52,25 @@ function Deshbord({ selectedCategory,flag}) {
     }
   ];
 
+
+  // const id = new URLSearchParams(search).get("id");
+  useEffect(() => {
+    const payload = {
+      encrypted: sessionStorage.getItem('userId'),
+      viewtoken: null,
+      bssForPractice: null
+    };
+
+    authenticationApi(payload)
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((Err) => {
+        console.log(Err)
+      })
+
+  }, []);
+
   const sortedComponents = backEndRespons[0].components
     .filter((component) => {
       if (selectedCategory === 'all') {
@@ -81,7 +101,7 @@ function Deshbord({ selectedCategory,flag}) {
         };
 
         return (
-          <div key={component.id} style={componentStyle} >
+          <div key={component.id} style={componentStyle} className='dashboard' >
             <Component />
           </div>
         );

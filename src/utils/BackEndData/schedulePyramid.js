@@ -1,5 +1,5 @@
 
-export const chartData=[
+export const SchedulePyramidData=[
       {
         "name": "Unique Form Fills",
         "count": "2127 unique form fills",

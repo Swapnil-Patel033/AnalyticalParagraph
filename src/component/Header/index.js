@@ -4,10 +4,8 @@ import DatePicker from '../DatePicker';
 
 function Header({ setFlag,flag }) {
 
-    
-
     return (
-        <header className={`header ${flag ? 'WhiteBackground' : 'BlackBackground'}`} >
+        <header className={`header ${flag ? 'WhiteBackground' : 'BlackBackgroundHeader'}`} >
             <div className="container" >
                 <div className="header__logo">
                     <h1 className={`header__logo__name ${flag ? 'BlackColor' : 'WhiteColor'}`}>Logo</h1>

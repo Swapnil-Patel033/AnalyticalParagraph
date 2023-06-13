@@ -294,20 +294,26 @@ nav.main-menu li.active>a,
   src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
 }
 
-  
+
 /* Start Flag  */
-.WhiteBackground{
+
+.BlackBackgroundSiderBar {
+  background-color: rgb(65 ,68 ,72);
+}
+
+.WhiteBackground {
   background-color: white;
 }
 
-.BlackBackground{
+.BlackBackground {
   background-color: black;
 }
 
-.WhiteColor{
+.WhiteColor {
   color: white;
 }
-.BlackColor{
+
+.BlackColor {
   color: black;
 }
 

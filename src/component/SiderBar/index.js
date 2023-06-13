@@ -14,13 +14,12 @@ function SideBar({ onCategorySelect, flag}) {
 
     const handleCategorySelect = (category) => {
         onCategorySelect(category);
-        console.log(category);
     };
 
     return (
         <>
             <div>
-                <nav className={`main-menu ${flag ? 'WhiteBackground' : 'BlackBackground'}`}>
+                <nav className={`main-menu ${flag ? 'WhiteBackground' : 'BlackBackgroundSiderBar'}`}>
                     <div>
                         <a className="logo" href="http://startific.com"></a>
                     </div>

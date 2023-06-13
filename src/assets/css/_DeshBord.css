@@ -23,3 +23,13 @@
 .heading-Boder{
      border-bottom: 2px solid #FFFFFF;
 }
+
+.dashboard{
+    width: 100%;;
+}
+
+@media only screen and (max-width: 1735px){
+    .dashboard{
+        width: 100% !important;
+    }
+}

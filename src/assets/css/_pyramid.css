@@ -1,0 +1,61 @@
+.custom-tooltip {
+  max-width: 300px;
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 1.4;
+  white-space: normal;
+}
+
+.question-mark-icon svg {
+  font-size: 20px;
+  color: #555555;
+}
+
+.series-label-questionmark {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(223, 16, 16);
+}
+
+.main_chart_text {
+  display: flex;
+  /* width: 100%; */
+}
+
+.tooltip {
+  font-size: 18px;
+  background-color: yellow;
+  color: black;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  margin-right: 10px;
+  position: relative;
+  margin-top: 13px;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: auto;
+  background-color: rgb(228, 225, 225);
+  color: #0f0f0f;
+  text-align: center;
+  border-radius: 6px;
+
+  /* Position the tooltip */
+  position: absolute;
+  white-space: nowrap;
+  z-index: 1;
+  height: 100px;
+  width: 200px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  height: 75px !important;
+  white-space: break-spaces;
+  /* position: absolute; */
+  /* width: 100px !important; */
+  /* z-index: 1111 !important; */
+  /* width: 100px !important; */
+}
